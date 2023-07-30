@@ -2,49 +2,67 @@
 [
   // NAVIGATION
   {
-    "key": "shift+a",
+    "key": "ctrl+shift+a",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "shift+b",
+    "key": "ctrl+shift+b",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "shift+j",
+    "key": "ctrl+shift+j",
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "shift+n",
+    "key": "ctrl+shift+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
   // FILE TREE
   {
-    "key": "ctrl+n",
-    "command": "explorer.newFile",
-    "when": "explorerViewletFocus"
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
   },
   {
-    "key": "ctrl+shift+n",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   },
   {
-    "key": "ctrl+shift+n",
+    "key": "shift+n",
     "command": "workbench.action.newWindow",
     "when": "!explorerViewletFocus"
   },
   {
-    "key": "ctrl+shift+d",
     "command": "deleteFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
   },
 
   // EXTRA
   {
     "key": "ctrl+shift+5",
     "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
   }
 ]
