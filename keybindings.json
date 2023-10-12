@@ -20,6 +20,11 @@
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
   // FILE TREE
   {
     "command": "workbench.action.toggleSidebarVisibility",
