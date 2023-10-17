@@ -53,7 +53,7 @@
   {
     "key": "shift+n",
     "command": "workbench.action.newWindow",
-    "when": "!explorerViewletFocus"
+    "when": "!explorerViewletFocus && vim.mode != 'Insert'"
   },
   {
     "command": "deleteFile",
