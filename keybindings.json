@@ -52,7 +52,7 @@
   },
   {
     "key": "shift+n",
-    "command": "workbench.action.newWindow",
+    "command": "",
     "when": "!explorerViewletFocus"
   },
   {
@@ -70,6 +70,7 @@
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
   },
+  // MAC OS EXTRA
   {
     "key": "cmd+q",
     "command": ""
