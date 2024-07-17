@@ -31,9 +31,9 @@
     "key": "ctrl+e"
   },
   {
-    "command": "workbench.files.action.focusFilesExplorer",
+    "command": "workbench.view.explorer",
     "key": "ctrl+e",
-    "when": "editorTextFocus"
+    "when": "!sideBarVisible"
   },
   {
     "key": "n",
